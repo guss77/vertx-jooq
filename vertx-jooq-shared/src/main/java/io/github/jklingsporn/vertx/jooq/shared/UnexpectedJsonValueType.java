@@ -11,7 +11,7 @@ public class UnexpectedJsonValueType extends ClassCastException {
   private static final long serialVersionUID = 8727637165178779604L;
   
   public UnexpectedJsonValueType(String fieldName, String fieldType, ClassCastException cause) {
-    super("Invalid JSON type provided for field '" + fieldName + "', expecting: " + jsonifyType(fieldType)));
+    super("Invalid JSON type provided for field '" + fieldName + "', expecting: " + jsonifyType(fieldType));
   }
   
   /**
