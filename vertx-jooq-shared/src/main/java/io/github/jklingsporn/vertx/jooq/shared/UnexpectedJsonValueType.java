@@ -19,8 +19,8 @@ public class UnexpectedJsonValueType extends ClassCastException {
    * @param type The Java type
    * @return a not exactly JSON type, but close
    */
-  private static jsonifyType(String type) {
-    return fieldType
+  private static String jsonifyType(String type) {
+    return type
       .replaceAll("\\w+\\.","") // remove package
       .replace("Json",""); // handle Vert.x's Json(Object|Array)
   }
